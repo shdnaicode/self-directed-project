@@ -1,1 +1,1 @@
-# Learning Platform for Robotic and Microcontroller with AI usage
+# Self-Directed Project
