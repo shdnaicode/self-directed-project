@@ -9,7 +9,7 @@ export default function Home() {
           <div className="flex flex-row items-start gap-16">
             {/* Profile Box */}
             <div className="relative flex h-[62vh] w-[30%] max-w-[95%] flex-col overflow-hidden rounded-[10px] border border-white/40 bg-white/15 opacity-[0.99] backdrop-blur-[15px] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)]">
-              <img className="bg-gray-300 rounded-lg h-24 w-24 ml-6 mt-7"></img>
+              <img className="bg-gray-300 rounded-lg h-24 w-24 ml-6 mt-7" src="" alt="Profile Picture"></img>
               <h1 className="pl-6 pt-7 mb-2 text-3xl font-semibold">
                 Shindanai Sudprasert
               </h1>
@@ -42,7 +42,7 @@ export default function Home() {
                   Completed Courses
                 </h2>
                 {/* Message outside padded heading */}
-                <div className="flex flex-1 items-center justify-center text-gray-500 px-0">
+                <div className="mb-2 flex flex-1 items-center justify-center text-gray-500 px-0">
                   No completed courses...
                 </div>
               </div>
