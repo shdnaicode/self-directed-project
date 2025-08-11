@@ -1,19 +1,27 @@
 export default function Auth() {
   return (
     <>
-      <div className="text-[#242424] text-opacity-80 flex min-h-screen justify-center items-center">
-        <div className="flex h-[60vh] w-[25%] overflow-hidden rounded-lg border border-white/40 bg-white/15 opacity-[0.99] backdrop-blur-[15px] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)]">
-          <form className="p-6 space-y-3 flex flex-col items-center w-full">
-            <p className="text-lg pt-2 font-bold self-start">Email address</p>
+      <div className="flex min-h-screen items-center justify-center text-[#242424]">
+        <div className="flex h-[60vh] w-[25%] overflow-hidden rounded-lg border border-white/40 bg-white/15 opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
+          <form className="flex w-full flex-col items-center space-y-3 p-6">
+            <p className="self-start pt-2 text-lg font-semibold">
+              Email address
+            </p>
             <input
               type="email"
-              className="font-normal text-base pl-3 bg-white w-full max-w-[400px] h-10 rounded-md border border-black/40 outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-10 w-full max-w-[400px] rounded-md border border-black/40 bg-white pl-3 text-base font-normal outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <p className="pt-2 text-lg font-bold self-start">Password</p>
+            <p className="self-start pt-2 text-lg font-semibold">Password</p>
             <input
               type="password"
-              className="font-normal text-base pl-3 bg-white w-full max-w-[400px] h-10 rounded-md border border-black/40 outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-10 w-full max-w-[400px] rounded-md border border-black/40 bg-white pl-3 text-base font-normal outline-none focus:ring-2 focus:ring-blue-500"
             />
+            <button
+              type="submit"
+              className="mt-5 h-10 w-full max-w-[400px] cursor-pointer rounded-md border border-[rgba(255,255,255,0.15)] bg-[#238636] font-normal text-white transition-colors outline-none hover:bg-[#1e7c31]"
+            >
+              Sign in
+            </button>
           </form>
         </div>
       </div>
