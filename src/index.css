@@ -4,4 +4,5 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='20' height='20' fill='none' stroke='%23e5e7eb' stroke-width='1'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-color: aliceblue;
+  font-family: "Inter", sans-serif;
 }
