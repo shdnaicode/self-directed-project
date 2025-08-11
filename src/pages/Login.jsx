@@ -23,6 +23,7 @@ export default function Login() {
               <input
                 id="email"
                 type="email"
+                autoComplete="email"
                 name="email"
                 placeholder="username@gmail.com"
                 className="h-10 w-full max-w-[400px] rounded-md border border-black/40 bg-white pl-3 text-sm font-normal outline-none focus:ring-2 focus:ring-blue-500"
@@ -31,13 +32,14 @@ export default function Login() {
 
               <label
                 htmlFor="password"
-                className="text-m self-start pt-2 font-medium"
+                className="text-md self-start pt-2 font-medium"
               >
                 Password
               </label>
               <input
                 id="password"
                 type="password"
+                autoComplete="current-password"
                 name="password"
                 placeholder="Password"
                 className="h-10 w-full max-w-[400px] rounded-md border border-black/40 bg-white pl-3 text-sm font-normal outline-none focus:ring-2 focus:ring-blue-500"
@@ -57,6 +59,7 @@ export default function Login() {
               </div>
               <button
                 type="button"
+                aria-label="Continue with GitHub"
                 className="mt-3 flex h-10 w-full max-w-[400px] cursor-pointer items-center justify-center gap-3 rounded-md border border-[rgba(255,255,255,0.15)] bg-gray-700 text-sm font-normal text-white shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px] transition-colors outline-none hover:bg-gray-800"
               >
                 <FaGithub size={20} />
@@ -65,9 +68,9 @@ export default function Login() {
             </form>
           </div>
 
-          <div className="text-sm font-normal flex h-[6vh] w-[25%] items-center justify-center overflow-hidden rounded-lg border border-white/40 bg-white/15 opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
+          <p className="text-sm font-normal flex h-[6vh] w-[25%] items-center justify-center overflow-hidden rounded-lg border border-white/40 bg-white/15 opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
             No account?&nbsp;<a href="#" className="underline text-blue-500">Create your account here.</a>
-          </div>
+          </p>
         </div>
 
         <footer className="mb-5 flex items-center justify-center gap-3 text-sm text-gray-700">
