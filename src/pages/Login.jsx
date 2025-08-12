@@ -30,12 +30,20 @@ export default function Login() {
                 required
               />
 
-              <label
-                htmlFor="password"
-                className="text-md self-start pt-2 font-medium"
-              >
-                Password
-              </label>
+              <div className="flex w-full items-center justify-between pt-2">
+                <label
+                  htmlFor="password"
+                  className="text-md self-start font-medium"
+                >
+                  Password
+                </label>
+                <a
+                  href="#"
+                  className="text-sm font-normal text-blue-500 hover:underline"
+                >
+                  Forgot Password?
+                </a>
+              </div>
               <input
                 id="password"
                 type="password"
@@ -68,8 +76,11 @@ export default function Login() {
             </form>
           </div>
 
-          <p className="text-sm font-normal flex h-[6vh] w-[25%] items-center justify-center overflow-hidden rounded-lg border border-white/40 bg-white/15 opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
-            No account?&nbsp;<a href="#" className="underline text-blue-500">Create your account here.</a>
+          <p className="flex h-[6vh] w-[25%] items-center justify-center overflow-hidden rounded-lg border border-white/40 bg-white/15 text-sm font-normal opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
+            No account?&nbsp;
+            <a href="#" className="text-blue-500 hover:underline">
+              Create your account
+            </a>
           </p>
         </div>
 

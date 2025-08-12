@@ -5,8 +5,8 @@ export default function Nav() {
   const navLinks = [
     { name: "Home", href: "javascript:void(0)" },
     { name: "Courses", href: "javascript:void(0)" },
-    { name: "Learning", href: "javascript:void(0)" },
-    { name: "Resources", href: "javascript:void(0)" },
+    { name: "Components", href: "javascript:void(0)" },
+    { name: "Community", href: "javascript:void(0)"},
   ];
 
   const navUser = {
@@ -80,17 +80,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-
-        <div className="text-opacity-60 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm font-normal text-black">
-          <IoMdSearch className="text-opacity-90 absolute top-1/2 left-3 -translate-y-1/2 text-[22px] text-black" />
-          <input
-            type="text"
-            aria-label="Search course..."
-            placeholder="Find your course..."
-            className="h-12 w-96 rounded-md border border-black/30 bg-white pl-11 font-normal text-black placeholder-black/60"
-          />
-        </div>
-
+        
         <div className="relative mr-5 flex items-center gap-5">
           {renderAvatar()}
 

@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Footer from "../components/Footer"
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     name: "Shndnaicode",
     joined: "2025-01-01",
     profilePicture: "",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+    bio: "Welcome to my site!",
   };
 
   return (
@@ -15,7 +16,7 @@ export default function Home() {
 
       <main className="relative z-10 ml-20 flex flex-grow flex-col gap-8 bg-transparent p-8 pt-44 font-normal text-[#242424]">
         <div className="flex flex-row items-start gap-16">
-          <div className="relative flex h-[62vh] w-[30%] max-w-[95%] flex-col overflow-hidden rounded-[10px] border border-white/40 bg-white/15 opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
+          <div className="relative flex h-[62vh] w-[25%] max-w-[95%] flex-col overflow-hidden rounded-[10px] border border-white/40 bg-white/15 opacity-[0.99] shadow-[0_8px_32px_rgba(0,0,0,0.15),_inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-[15px]">
             <div className="mt-7 ml-6">
               {user.profilePicture ? (
                 <img
@@ -24,7 +25,7 @@ export default function Home() {
                   alt={`${user.name} profile picture`}
                 />
               ) : (
-                <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-gray-300 text-4xl font-semibold text-white">
+                <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-gray-400 text-4xl font-semibold text-white">
                   {user.name.charAt(0).toUpperCase()}
                 </div>
               )}
@@ -65,34 +66,7 @@ export default function Home() {
           </section>
         </div>
       </main>
-
-      <footer className="mb-5 flex items-center justify-center gap-3 text-sm text-gray-700">
-        <a
-          href="https://github.com/shdnaicode"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub Profile"
-          className="transition-colors hover:text-black"
-        >
-          <FaGithub size={24} />
-        </a>
-        <span>Â© {new Date().getFullYear()} Shindanai Sudprasert</span>
-        <span className="pointer-events-none cursor-default select-none">
-          |
-        </span>
-        <a href="#" className="hover:underline">
-          Terms
-        </a>
-        <a href="#" className="hover:underline">
-          Privacy
-        </a>
-        <a
-          href="mailto:smartsoodprasert69@gmail.com"
-          className="hover:underline"
-        >
-          Contact
-        </a>
-      </footer>
+      {/* Footer are to be added here */}
     </div>
   );
 }
