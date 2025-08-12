@@ -1,7 +1,7 @@
-import Nav from "../components/Nav"
-import Footer from "../components/Footer"
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
-export default function Course() {   
+export default function Course() {
   return (
     <>
       <div className="flex min-h-screen flex-col text-[#242424]">
@@ -15,6 +15,7 @@ export default function Course() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

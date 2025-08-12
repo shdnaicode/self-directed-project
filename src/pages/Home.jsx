@@ -1,6 +1,5 @@
 import Nav from "../components/Nav";
-import Footer from "../components/Footer"
-import { FaGithub } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const user = {
@@ -66,7 +65,7 @@ export default function Home() {
           </section>
         </div>
       </main>
-      {/* Footer are to be added here */}
+      <Footer />
     </div>
   );
 }

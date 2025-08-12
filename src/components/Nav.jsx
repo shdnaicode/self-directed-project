@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IoMdSearch } from "react-icons/io";
 
 export default function Nav() {
   const navLinks = [
